@@ -5,7 +5,7 @@
 backup/
 
 # MSVS project files
-*.vcproj
+*.vcxproj
 *.filters
 *.user
 
