@@ -235,6 +235,8 @@
     <None Include="..\..\include\kaphein\collection\Vector.inl">
       <Filter>include\kaphein\collection</Filter>
     </None>
+    <None Include="..\..\LICENSE" />
+    <None Include="..\..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\kaphein\collection\ArrayIteratorBase.cpp">
