@@ -23,10 +23,8 @@
  *  THE SOFTWARE.
  */
 
-#ifndef KAPHEIN_UTILITY_UNROLLEDLOOP_HPP
-#define KAPHEIN_UTILITY_UNROLLEDLOOP_HPP
-
-#include "kaphein/cplusplus/pp/basic.hpp"
+#ifndef KAPHEIN_UTILITY_REMOVECONST_HPP
+#define KAPHEIN_UTILITY_REMOVECONST_HPP
 
 namespace kaphein
 {
@@ -35,32 +33,21 @@ namespace utility
     /**
      *  @since 2016-06-18
      */
-    template <
-        SizeType End
-        , SizeType Start = 0
-        , SizeType Current = End - Start
-    >
-    struct UnrolledLoop
+    template <typename T>
+    struct RemoveConst
     {
-        template <typename Callable>
-        static void step(Callable callable);
+        typedef T type;
     };
 
     /**
      *  @since 2016-06-18
      */
-    template <
-        SizeType End
-        , SizeType Start
-    >
-    struct UnrolledLoop<End, Start, 0>
+    template <typename T>
+    struct RemoveConst<const T>
     {
-        template <typename Callable>
-        static void step(Callable callable);
+        typedef T type;
     };
 }
 }
-
-#include "UnrolledLoop.inl"
 
 #endif

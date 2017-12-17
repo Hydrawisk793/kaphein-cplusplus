@@ -11,6 +11,9 @@ namespace string
 {
     template class KAPHEIN_PP_DLL_API collection::Vector<UInt8>;
 
+    /**
+     *  @since 2017-05-13
+     */
     class KAPHEIN_PP_DLL_API Utf8String
     {
     private:
