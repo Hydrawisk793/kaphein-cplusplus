@@ -4,10 +4,11 @@
 # Backup files
 backup/
 
-# MSVS project files
-*.vcxproj
-*.filters
-*.user
+# MSVS files
+#*.vcxproj
+#*.filters
+#*.user
+*.sdf
 
 # Compiled Object files
 obj/

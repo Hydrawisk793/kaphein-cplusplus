@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\kaphein">
+      <UniqueIdentifier>{f5324b2e-e9c5-4876-8841-58eb205087bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus">
+      <UniqueIdentifier>{66a46d62-09bf-483e-a763-5caa51151bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein">
+      <UniqueIdentifier>{a6e8949f-dab5-4dba-b064-dcb8ba0f9d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\cplusplus">
+      <UniqueIdentifier>{6a78e576-b1a6-4d24-81b8-16452431bb41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\memory">
+      <UniqueIdentifier>{be65a6d9-e190-4287-b2f5-e8f3721189e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\collection">
+      <UniqueIdentifier>{afa3e2b3-d4da-46c9-b6f1-c05064de3933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\cplusplus\collection">
+      <UniqueIdentifier>{c9b31640-4f9c-4c49-8189-708ae848a20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\math">
+      <UniqueIdentifier>{fd68ed37-57b0-436c-9cba-2030c3d425a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\string">
+      <UniqueIdentifier>{362bf71e-ceeb-4289-a517-ff9eceb4d979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\utility">
+      <UniqueIdentifier>{84a1fdb4-b1e3-49cd-897d-ab7e2a58e71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\pp">
+      <UniqueIdentifier>{4bb7c3ae-6dc7-4569-a2c0-80628fa3211f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\cplusplus\functional">
+      <UniqueIdentifier>{464d8609-2af1-4b80-afc8-02d676a5a8fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\cplusplus\functional">
+      <UniqueIdentifier>{1f9a9a73-b60b-4ed3-a5f6-4d1c44caef69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\cplusplus\string">
+      <UniqueIdentifier>{8363519f-546a-4538-a2b1-b31ef9392acd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\cplusplus\math">
+      <UniqueIdentifier>{6359499a-9f72-4ca1-819d-512c830daf4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\pp\basic.hpp">
+      <Filter>include\kaphein\cplusplus\pp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\Delegate.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\DelegateBase.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FreeFunctionWrapper.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FunctionWrapper.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FunctionWrapperBase.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\macro.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\MethodWrapper.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Abs.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Acos.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Asin.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Atan.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Atan2.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Cbrt.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Ceil.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Cos.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Div.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Equal.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Exp.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Floor.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\IsZero.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Lerp.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Matrix.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\MatrixMxN.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\MatrixNxN.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\NumericTraits.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Pow.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Sin.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Sqrt.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Tan.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector2f.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector2i4.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector3f.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector4f.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\VectorN.hpp">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\memory\DefaultAllocator.hpp">
+      <Filter>include\kaphein\cplusplus\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\string\Utf8String.hpp">
+      <Filter>include\kaphein\cplusplus\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\SelectType.hpp">
+      <Filter>include\kaphein\cplusplus\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\UnrolledLoop.hpp">
+      <Filter>include\kaphein\cplusplus\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\DivideByZeroException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\Exception.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\IndexOutOfRangeException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\InvalidArgumentException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\NotImplementedMethodException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\NullPointerException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\RangeException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\UnsupportedMethodException.hpp">
+      <Filter>include\kaphein\cplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\Dummy.hpp">
+      <Filter>include\kaphein\cplusplus\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ArrayIterator.hpp">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ArrayIteratorBase.hpp">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ContainerUnderflowException.hpp">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\List.hpp">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\Vector.hpp">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\RemoveConst.hpp">
+      <Filter>include\kaphein\cplusplus\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\kaphein\cplusplus\math\Matrix.inl">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\math\MatrixMxN.inl">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\math\VectorN.inl">
+      <Filter>include\kaphein\cplusplus\math</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\memory\DefaultAllocator.inl">
+      <Filter>include\kaphein\cplusplus\memory</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\utility\UnrolledLoop.inl">
+      <Filter>include\kaphein\cplusplus\utility</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\collection\ArrayIterator.inl">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </None>
+    <None Include="..\..\include\kaphein\cplusplus\collection\Vector.inl">
+      <Filter>include\kaphein\cplusplus\collection</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\collection\ArrayIteratorBase.cpp">
+      <Filter>src\kaphein\cplusplus\collection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\functional\FunctionWrapperBase.cpp">
+      <Filter>src\kaphein\cplusplus\functional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Abs.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Acos.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Asin.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Atan.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Atan2.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Cbrt.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Ceil.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Cos.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Div.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Exp.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Floor.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\NumericTraits.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Pow.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Sin.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Sqrt.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Tan.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Vector2i4.cpp">
+      <Filter>src\kaphein\cplusplus\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\string\Utf8String.cpp">
+      <Filter>src\kaphein\cplusplus\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\DivideByZeroException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\Exception.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\IndexOutOfRangeException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\InvalidArgumentException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\NotImplementedMethodException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\NullPointerException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\RangeException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\UnsupportedMethodException.cpp">
+      <Filter>src\kaphein\cplusplus</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

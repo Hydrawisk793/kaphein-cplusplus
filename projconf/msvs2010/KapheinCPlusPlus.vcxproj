@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2A301E9-8F12-4280-B6F3-4B7F2F3CCB08}</ProjectGuid>
+    <RootNamespace>KapheinCPlusPlus</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ArrayIterator.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ArrayIteratorBase.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\ContainerUnderflowException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\List.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\collection\Vector.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\DivideByZeroException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\Exception.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\Delegate.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\DelegateBase.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\Dummy.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FreeFunctionWrapper.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FunctionWrapper.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\FunctionWrapperBase.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\macro.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\functional\MethodWrapper.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\IndexOutOfRangeException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\InvalidArgumentException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Abs.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Acos.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Asin.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Atan.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Atan2.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Cbrt.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Ceil.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Cos.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Div.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Equal.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Exp.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Floor.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\IsZero.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Lerp.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Matrix.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\MatrixMxN.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\MatrixNxN.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\NumericTraits.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Pow.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Sin.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Sqrt.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Tan.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector2f.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector2i4.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector3f.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\Vector4f.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\math\VectorN.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\memory\DefaultAllocator.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\NotImplementedMethodException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\NullPointerException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\pp\basic.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\RangeException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\string\Utf8String.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\UnsupportedMethodException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\RemoveConst.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\SelectType.hpp" />
+    <ClInclude Include="..\..\include\kaphein\cplusplus\utility\UnrolledLoop.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\kaphein\cplusplus\collection\ArrayIterator.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\collection\Vector.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\math\Matrix.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\math\MatrixMxN.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\math\VectorN.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\memory\DefaultAllocator.inl" />
+    <None Include="..\..\include\kaphein\cplusplus\utility\UnrolledLoop.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\kaphein\cplusplus\collection\ArrayIteratorBase.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\DivideByZeroException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\Exception.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\functional\FunctionWrapperBase.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\IndexOutOfRangeException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\InvalidArgumentException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Abs.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Acos.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Asin.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Atan.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Atan2.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Cbrt.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Ceil.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Cos.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Div.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Exp.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Floor.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\NumericTraits.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Pow.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Sin.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Sqrt.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Tan.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\math\Vector2i4.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\NotImplementedMethodException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\NullPointerException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\RangeException.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\string\Utf8String.cpp" />
+    <ClCompile Include="..\..\src\kaphein\cplusplus\UnsupportedMethodException.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
