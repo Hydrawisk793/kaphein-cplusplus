@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2A301E9-8F12-4280-B6F3-4B7F2F3CCB08}</ProjectGuid>
-    <RootNamespace>KapheinCPlusPlus</RootNamespace>
+    <RootNamespace>kaphein-cplusplus</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -100,12 +100,12 @@
       <MinimalRebuild>true</MinimalRebuild>
       <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)kaphein-c\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)kaphein-c\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -114,12 +114,12 @@
       <Optimization>Disabled</Optimization>
       <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)kaphein-c\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)kaphein-c\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,14 +131,14 @@
       <MinimalRebuild>true</MinimalRebuild>
       <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)kaphein-c\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)kaphein-c\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -149,14 +149,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)KapheinC\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)kaphein-c\include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)KapheinC\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)kaphein-c\lib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
