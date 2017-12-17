@@ -1,3 +1,28 @@
+/*
+ *  Copyright (c) Hydrawisk793
+ *  All rights reserved.
+ *
+ *  This code is licensed under the MIT License.
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files(the "Software"), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions :
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
 #ifndef KAPHEIN_COLLECTION_VECTOR_HPP
 #define KAPHEIN_COLLECTION_VECTOR_HPP
 
@@ -11,7 +36,7 @@ namespace collection
 {
     /**
      *  @brief A linear collection.
-     *  @since 2016-12-01
+     *  @since 2014-03-23
      */
     template <
         typename E
@@ -101,20 +126,20 @@ namespace collection
         void swap(Vector<E, A>& rhs);
 
     public:
-        //Vector<E, A>& set(const_iterator iter, E&& e);
+        Vector<E, A>& emplace(const_iterator iter, E&& e);
 
         Vector<E, A>& swapElements(iterator lhs, iterator rhs);
 
-        //Vector<E, A>& insert(const_iterator pos, const E& e);
+        Vector<E, A>& insert(const_iterator pos, const E& e);
 
-        //Vector<E, A>& insert(const_iterator pos, E&& e);
+        Vector<E, A>& insert(const_iterator pos, E&& e);
 
         //Vector<E, A>& insert(const_iterator pos, SizeType count, const E& e);
 
         //template <typename Iter>
         //Vector<E, A>& insert(const_iterator pos, Iter srcBegin, Iter srcEnd);
 
-        //Vector<E, A>& remove(const_iterator pos);
+        Vector<E, A>& remove(const_iterator pos);
 
         //Vector<E, A>& remove(const_iterator destBegin, const_iterator destEnd);
 
@@ -174,6 +199,8 @@ namespace collection
         void assertInElementRange(E* pBegin, E* pEnd) const;
 
         void assertIsNotEmpty() const;
+
+        void assertPointerInElements(const E* p) const;
 
     public:
         E* pStart_;

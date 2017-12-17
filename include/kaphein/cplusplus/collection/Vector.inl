@@ -1,3 +1,28 @@
+/*
+ *  Copyright (c) Hydrawisk793
+ *  All rights reserved.
+ *
+ *  This code is licensed under the MIT License.
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files(the "Software"), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions :
+ *
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ */
+
 #ifndef KAPHEIN_COLLECTION_VECTOR_INL
 #define KAPHEIN_COLLECTION_VECTOR_INL
 
@@ -102,7 +127,7 @@ namespace collection
     template <typename E, typename A>
     Vector<E, A>::~Vector()
     {
-        if(pStart_) {
+        if(pStart_ != nullptr) {
             clear();
 
             allocator_.deallocate(pStart_, getCapacity());
@@ -318,17 +343,18 @@ namespace collection
         rhs.pTop_ = temp;
     }
 
-    //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::set(const_iterator iter, const E& e)
-    //{
-    //    //TODO : 备泅
-    //}
-    //
-    //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::set(const_iterator iter, E&& e)
-    //{
-    //    //TODO : 备泅
-    //}
+    template <typename E, typename A>
+    Vector<E, A>& Vector<E, A>::emplace(const_iterator iter, E&& e)
+    {
+        E* pDest = &const_cast<E&>(*(iter + 1));
+        assertPointerInElements(pDest);
+
+        pDest->~E();
+
+        new (pDest) E(std::move(e));
+
+        return *this;
+    }
     
     template <typename E, typename A>
     Vector<E, A>& Vector<E, A>::swapElements(iterator lhs, iterator rhs)
@@ -340,35 +366,66 @@ namespace collection
         return *this;
     }
     
-    //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::insert(const_iterator iter, const E& e)
-    //{
-    //    //TODO : 备泅
-    //}
-    //
-    //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::insert(const_iterator iter, E&& e)
-    //{
-    //    //TODO : 备泅
-    //}
-    //
+    template <typename E, typename A>
+    Vector<E, A>& Vector<E, A>::insert(const_iterator iter, const E& e)
+    {
+        expandIfFull(getElementCount() + 1);
+
+        E* pDest = &const_cast<E&>(*(iter + 1));
+        assertPointerInElements(pDest);
+
+        shiftElementsToRight(pDest, pTop_);
+
+        new (pDest) E(e);
+
+        return *this;
+    }
+    
+    template <typename E, typename A>
+    Vector<E, A>& Vector<E, A>::insert(const_iterator iter, E&& e)
+    {
+        expandIfFull(getElementCount() + 1);
+
+        E* pDest = &const_cast<E&>(*(iter + 1));
+        assertPointerInElements(pDest);
+
+        shiftElementsToRight(pDest, pTop_);
+
+        new (pDest) E(std::move(e));
+
+        return *this;
+    }
+    
     //template <typename E, typename A>
     //template <typename Iter>
     //Vector<E, A>& Vector<E, A>::insert(const_iterator iter, Iter beginIter, Iter endIter)
     //{
     //    //TODO : 备泅
     //}
-    //
-    //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::remove(const_iterator iter)
-    //{
-    //    //TODO : 备泅
-    //}
-    //
+    
+    template <typename E, typename A>
+    Vector<E, A>& Vector<E, A>::remove(const_iterator iter)
+    {
+        assertIsNotEmpty();
+        
+        E* pElem = &const_cast<E&>(*iter);
+        assertPointerInElements(pElem);
+
+        pElem->~E();
+
+        shiftElementsToLeft(pElem + 1, pTop_);
+
+        return *this;
+    }
+    
     //template <typename E, typename A>
     //Vector<E, A>& Vector<E, A>::remove(const_iterator beginIter, const_iterator endIter)
     //{
+    //    assertIsNotEmpty();
+
     //    //TODO : 备泅
+
+    //    return *this;
     //}
     
     template <typename E, typename A>
@@ -623,8 +680,8 @@ namespace collection
     void Vector<E, A>::invalidateSelf()
     {
         pStart_ = nullptr;
-        pEnd_ = nullptr;
-        pTop_ = nullptr;
+        pEnd_ = pStart_;
+        pTop_ = pStart_;
     }
 
     template <typename E, typename A>
@@ -648,6 +705,14 @@ namespace collection
     {
         if(isEmpty()) {
             throw ContainerUnderflowException();
+        }
+    }
+
+    template <typename E, typename A>
+    void Vector<E, A>::assertPointerInElements(const E* p) const
+    {
+        if(p < pStart_ || p >= pTop_) {
+            throw RangeException();
         }
     }
 }

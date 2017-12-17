@@ -5,6 +5,9 @@ namespace kaphein
 {
 namespace memory
 {
+    /**
+     *  @since 2014-03-23
+     */
     template <typename T>
     struct DefaultAllocator
     {

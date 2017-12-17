@@ -5,6 +5,9 @@
 
 namespace kaphein
 {
+    /**
+     *  @since 2014-03-23
+     */
     class KAPHEIN_PP_DLL_API Exception
     {
     public:
