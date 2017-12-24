@@ -53,27 +53,6 @@
     <ClInclude Include="..\..\include\kaphein\pp\basic.hpp">
       <Filter>include\kaphein\pp</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\Delegate.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\DelegateBase.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\FreeFunctionWrapper.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapper.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapperBase.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\macro.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\MethodWrapper.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\include\kaphein\math\Abs.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
@@ -167,9 +146,6 @@
     <ClInclude Include="..\..\include\kaphein\utility\UnrolledLoop.hpp">
       <Filter>include\kaphein\utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\Dummy.hpp">
-      <Filter>include\kaphein\functional</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\include\kaphein\collection\ArrayIterator.hpp">
       <Filter>include\kaphein\collection</Filter>
     </ClInclude>
@@ -211,6 +187,48 @@
     </ClInclude>
     <ClInclude Include="..\..\include\kaphein\UnsupportedMethodException.hpp">
       <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\utility\IsConst.hpp">
+      <Filter>include\kaphein\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\utility\IsVolatile.hpp">
+      <Filter>include\kaphein\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\Delegate.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\Dummy.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\FreeFunctionWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapperBase.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\macro.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\MethodWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\utility\func.hpp">
+      <Filter>include\kaphein\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\Function.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\functional\FunctionBase.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\utility\RemoveVolatile.hpp">
+      <Filter>include\kaphein\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kaphein\utility\RemoveCv.hpp">
+      <Filter>include\kaphein\utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -322,6 +340,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\kaphein\RangeException.cpp">
       <Filter>src\kaphein</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\kaphein\functional\FunctionBase.cpp">
+      <Filter>src\kaphein\functional</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

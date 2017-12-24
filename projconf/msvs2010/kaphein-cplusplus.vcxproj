@@ -172,9 +172,10 @@
     <ClInclude Include="..\..\include\kaphein\DivideByZeroException.hpp" />
     <ClInclude Include="..\..\include\kaphein\Exception.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\Delegate.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\DelegateBase.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\Dummy.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\FreeFunctionWrapper.hpp" />
+    <ClInclude Include="..\..\include\kaphein\functional\Function.hpp" />
+    <ClInclude Include="..\..\include\kaphein\functional\FunctionBase.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapper.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapperBase.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\macro.hpp" />
@@ -215,7 +216,12 @@
     <ClInclude Include="..\..\include\kaphein\RangeException.hpp" />
     <ClInclude Include="..\..\include\kaphein\string\Utf8String.hpp" />
     <ClInclude Include="..\..\include\kaphein\UnsupportedMethodException.hpp" />
+    <ClInclude Include="..\..\include\kaphein\utility\func.hpp" />
+    <ClInclude Include="..\..\include\kaphein\utility\IsConst.hpp" />
+    <ClInclude Include="..\..\include\kaphein\utility\IsVolatile.hpp" />
     <ClInclude Include="..\..\include\kaphein\utility\RemoveConst.hpp" />
+    <ClInclude Include="..\..\include\kaphein\utility\RemoveCv.hpp" />
+    <ClInclude Include="..\..\include\kaphein\utility\RemoveVolatile.hpp" />
     <ClInclude Include="..\..\include\kaphein\utility\SelectType.hpp" />
     <ClInclude Include="..\..\include\kaphein\utility\UnrolledLoop.hpp" />
   </ItemGroup>
@@ -234,6 +240,7 @@
     <ClCompile Include="..\..\src\kaphein\collection\ArrayIteratorBase.cpp" />
     <ClCompile Include="..\..\src\kaphein\DivideByZeroException.cpp" />
     <ClCompile Include="..\..\src\kaphein\Exception.cpp" />
+    <ClCompile Include="..\..\src\kaphein\functional\FunctionBase.cpp" />
     <ClCompile Include="..\..\src\kaphein\functional\FunctionWrapperBase.cpp" />
     <ClCompile Include="..\..\src\kaphein\IndexOutOfRangeException.cpp" />
     <ClCompile Include="..\..\src\kaphein\InvalidArgumentException.cpp" />

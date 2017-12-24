@@ -9,7 +9,7 @@ namespace kaphein
     /**
      *  @since 2014-03-23
      */
-    class NullPointerException
+    class KAPHEIN_PP_DLL_API NullPointerException
         : public Exception
     {
     public:

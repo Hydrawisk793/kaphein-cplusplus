@@ -52,6 +52,30 @@
 #define KAPHEIN_x_MAKE_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
     KAPHEIN_x_MAKE_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , _8
+#define KAPHEIN_x_MAKE_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    KAPHEIN_x_MAKE_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    , _9
+#define KAPHEIN_x_MAKE_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    KAPHEIN_x_MAKE_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    , _10
+#define KAPHEIN_x_MAKE_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    KAPHEIN_x_MAKE_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    , _11
+#define KAPHEIN_x_MAKE_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    KAPHEIN_x_MAKE_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    , _12
+#define KAPHEIN_x_MAKE_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    KAPHEIN_x_MAKE_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    , _13
+#define KAPHEIN_x_MAKE_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    KAPHEIN_x_MAKE_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    , _14
+#define KAPHEIN_x_MAKE_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    KAPHEIN_x_MAKE_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    , _15
+#define KAPHEIN_x_MAKE_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
+    KAPHEIN_x_MAKE_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    , _16
 #define KAPHEIN_x_MAKE_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_LIST_ ## count (__VA_ARGS__) \
@@ -88,6 +112,30 @@
 #define KAPHEIN_x_MAKE_OPTIONAL_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
     KAPHEIN_x_MAKE_OPTIONAL_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , _8
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    , _9
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    , _10
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    , _11
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    , _12
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    , _13
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    , _14
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    , _15
+#define KAPHEIN_x_MAKE_OPTIONAL_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
+    KAPHEIN_x_MAKE_OPTIONAL_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    , _16
 #define KAPHEIN_x_MAKE_OPTIONAL_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_OPTIONAL_LIST_ ## count (__VA_ARGS__) \
@@ -160,6 +208,30 @@
 #define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
     KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , typename _8
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    , typename _9
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    , typename _10
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    , typename _11
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    , typename _12
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    , typename _13
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    , typename _14
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    , typename _15
+#define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
+    KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    , typename _16
 #define KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_OPTIONAL_TYPENAME_LIST_ ## count (__VA_ARGS__) \
@@ -173,29 +245,53 @@
     )
 
 #define KAPHEIN_x_MAKE_ARGVAR_LIST_0()
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_1() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_1(_1) \
     a1
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_2() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_1() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_2(_1, _2) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_1(_1) \
     , a2
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_3() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_2() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_3(_1, _2, _3) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_2(_1, _2) \
     , a3
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_4() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_3() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_4(_1, _2, _3, _4) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_3(_1, _2, _3) \
     , a4
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_5() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_4() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_5(_1, _2, _3, _4, _5) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_4(_1, _2, _3, _4) \
     , a5
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_6() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_5() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_6(_1, _2, _3, _4, _5, _6) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_5(_1, _2, _3, _4, _5) \
     , a6
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_7() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_6() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_6(_1, _2, _3, _4, _5, _6) \
     , a7
-#define KAPHEIN_x_MAKE_ARGVAR_LIST_8() \
-    KAPHEIN_x_MAKE_ARGVAR_LIST_7() \
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , a8
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    , a9
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    , a10
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    , a11
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    , a12
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    , a13
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    , a14
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    , a15
+#define KAPHEIN_x_MAKE_ARGVAR_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
+    KAPHEIN_x_MAKE_ARGVAR_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    , a16
 #define KAPHEIN_x_MAKE_ARGVAR_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_ARGVAR_LIST_ ## count (__VA_ARGS__) \
@@ -232,6 +328,30 @@
 #define KAPHEIN_x_MAKE_ARGUMENT_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
     KAPHEIN_x_MAKE_ARGUMENT_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , _8 a8
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
+    , _9 a9
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
+    , _10 a10
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
+    , _11 a11
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
+    , _12 a12
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
+    , _13 a13
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
+    , _14 a14
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
+    , _15 a15
+#define KAPHEIN_x_MAKE_ARGUMENT_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
+    KAPHEIN_x_MAKE_ARGUMENT_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
+    , _16 a16
 #define KAPHEIN_x_MAKE_ARGUMENT_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_ARGUMENT_LIST_ ## count (__VA_ARGS__) \
