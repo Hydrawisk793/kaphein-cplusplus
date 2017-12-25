@@ -27,6 +27,8 @@
 #define KAPHEIN_FUNCTIONAL_FUNCTION_HPP
 
 #include "kaphein/pp/basic.hpp"
+#include "kaphein/utility/IsConst.hpp"
+#include "kaphein/utility/IsVolatile.hpp"
 #include "kaphein/functional/macro.hpp"
 #include "kaphein/functional/FunctionBase.hpp"
 
@@ -106,46 +108,48 @@ namespace functional
             ); \
         }; \
          \
-        template <typename E, bool IsConst, bool IsVolatile> \
-        struct MethodPtrTypeCase {}; \
-         \
-        template <typename E> \
-        struct MethodPtrTypeCase<E, false, false> \
-        { \
-            typedef R (E::*type)( \
-                KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
-            ); \
-        }; \
-         \
-        template <typename E> \
-        struct MethodPtrTypeCase<E, true, false> \
-        { \
-            typedef R (E::*type)( \
-                KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
-            ) const; \
-        }; \
-         \
-        template <typename E> \
-        struct MethodPtrTypeCase<E, false, true> \
-        { \
-            typedef R (E::*type)( \
-                KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
-            ) volatile; \
-        }; \
-         \
-        template <typename E> \
-        struct MethodPtrTypeCase<E, true, true> \
-        { \
-            typedef R (E::*type)( \
-                KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
-            ) const volatile; \
-        }; \
-         \
     public: \
         template <typename E> \
         struct MethodPtrTypeSelector \
         { \
-            typedef typename MethodPtrTypeCase< \
+        private: \
+            template <typename E, bool IsConst, bool IsVolatile> \
+            struct Case {}; \
+             \
+            template <typename E> \
+            struct Case<E, false, false> \
+            { \
+                typedef R (E::*type)( \
+                    KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
+                ); \
+            }; \
+             \
+            template <typename E> \
+            struct Case<E, true, false> \
+            { \
+                typedef R (E::*type)( \
+                    KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
+                ) const; \
+            }; \
+             \
+            template <typename E> \
+            struct Case<E, false, true> \
+            { \
+                typedef R (E::*type)( \
+                    KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
+                ) volatile; \
+            }; \
+             \
+            template <typename E> \
+            struct Case<E, true, true> \
+            { \
+                typedef R (E::*type)( \
+                    KAPHEIN_x_MAKE_ARGUMENT_LIST(__VA_ARGS__) \
+                ) const volatile; \
+            }; \
+             \
+        public: \
+            typedef typename Case< \
                 E \
                 , utility::IsConst<E>::value \
                 , utility::IsVolatile<E>::value \

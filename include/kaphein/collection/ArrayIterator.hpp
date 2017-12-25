@@ -50,6 +50,8 @@ namespace collection
         typedef typename utility::SelectType<IsConstIterator, const void*, void*>::SelectedType VoidPtrType;
 
     public:
+        typedef std::random_access_iterator_tag iterator_category;
+
         typedef typename utility::SelectType<IsConstIterator, const E, E>::SelectedType value_type;
 
         typedef typename utility::SelectType<IsConstIterator, const E*, E*>::SelectedType pointer;
@@ -57,8 +59,6 @@ namespace collection
         typedef typename utility::SelectType<IsConstIterator, const E&, E&>::SelectedType reference;
 
         typedef ArrayIteratorBase::difference_type difference_type;
-
-        typedef std::random_access_iterator_tag iterator_category;
 
     public:
         ArrayIterator();
@@ -118,17 +118,7 @@ namespace collection
         difference_type operator -(const ArrayIterator<E, IsConstIterator> & rhs) const;
 
     public:
-        bool operator ==(const ArrayIterator<E, IsConstIterator>& rhs) const;
-
-        bool operator !=(const ArrayIterator<E, IsConstIterator>& rhs) const;
-
-        bool operator <(const ArrayIterator<E, IsConstIterator>& rhs) const;
-
-        bool operator >=(const ArrayIterator<E, IsConstIterator>& rhs) const;
-
-        bool operator <=(const ArrayIterator<E, IsConstIterator>& rhs) const;
-
-        bool operator >(const ArrayIterator<E, IsConstIterator>& rhs) const;
+        operator ArrayIterator<E, true>() const;
     };
 }
 }

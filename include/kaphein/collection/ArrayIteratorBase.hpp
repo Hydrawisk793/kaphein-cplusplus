@@ -60,14 +60,14 @@ namespace collection
 
         ArrayIteratorBase& operator =(ArrayIteratorBase&& rhs);
 
-    public:
+    protected:
         const void* getStart() const;
 
         const void* getEnd() const;
 
         const void* getCurrent() const;
 
-    public:
+    protected:
         void moveToNext(SizeType elementSize);
 
         void moveToNext(SizeType elementSize, difference_type diff);
@@ -78,12 +78,25 @@ namespace collection
 
         difference_type getDifference(const ArrayIteratorBase& rhs) const;
 
-    public:
+    protected:
         bool equals(const ArrayIteratorBase& rhs) const;
 
         bool lessThan(const ArrayIteratorBase& rhs) const;
 
         bool lessThanOrEqualTo(const ArrayIteratorBase& rhs) const;
+
+    public:
+        bool operator ==(const ArrayIteratorBase& rhs) const;
+
+        bool operator !=(const ArrayIteratorBase& rhs) const;
+
+        bool operator <(const ArrayIteratorBase& rhs) const;
+
+        bool operator >=(const ArrayIteratorBase& rhs) const;
+
+        bool operator <=(const ArrayIteratorBase& rhs) const;
+
+        bool operator >(const ArrayIteratorBase& rhs) const;
 
     private:
         void invalidateSelf();

@@ -150,6 +150,36 @@ namespace collection
         return pCurrent_ <= rhs.pCurrent_;
     }
 
+    bool ArrayIteratorBase::operator ==(const ArrayIteratorBase& rhs) const
+    {
+        return equals(rhs);
+    }
+    
+    bool ArrayIteratorBase::operator !=(const ArrayIteratorBase& rhs) const
+    {
+        return !((*this) == rhs);
+    }
+    
+    bool ArrayIteratorBase::operator <(const ArrayIteratorBase& rhs) const
+    {
+        return lessThan(rhs);
+    }
+    
+    bool ArrayIteratorBase::operator >=(const ArrayIteratorBase& rhs) const 
+    {
+        return !((*this) < rhs);
+    }
+    
+    bool ArrayIteratorBase::operator <=(const ArrayIteratorBase& rhs) const
+    {
+        return lessThanOrEqualTo(rhs);
+    }
+    
+    bool ArrayIteratorBase::operator >(const ArrayIteratorBase& rhs) const
+    {
+        return !((*this) <= rhs);
+    }
+
     void ArrayIteratorBase::invalidateSelf()
     {
         pStart_ = nullptr;

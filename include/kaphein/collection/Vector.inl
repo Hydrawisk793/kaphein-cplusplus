@@ -367,7 +367,7 @@ namespace collection
     }
     
     template <typename E, typename A>
-    Vector<E, A>& Vector<E, A>::insert(const_iterator iter, const E& e)
+    typename Vector<E, A>::iterator Vector<E, A>::insert(const_iterator iter, const E& e)
     {
         expandIfFull(getElementCount() + 1);
 
@@ -378,11 +378,11 @@ namespace collection
 
         new (pDest) E(e);
 
-        return *this;
+        return iterator(pStart_, pEnd_, pDest);
     }
     
     template <typename E, typename A>
-    Vector<E, A>& Vector<E, A>::insert(const_iterator iter, E&& e)
+    typename Vector<E, A>::iterator Vector<E, A>::insert(const_iterator iter, E&& e)
     {
         expandIfFull(getElementCount() + 1);
 
@@ -393,7 +393,7 @@ namespace collection
 
         new (pDest) E(std::move(e));
 
-        return *this;
+        return iterator(pStart_, pEnd_, pDest);
     }
     
     //template <typename E, typename A>
@@ -404,22 +404,23 @@ namespace collection
     //}
     
     template <typename E, typename A>
-    Vector<E, A>& Vector<E, A>::remove(const_iterator iter)
+    typename Vector<E, A>::iterator Vector<E, A>::remove(const_iterator iter)
     {
         assertIsNotEmpty();
         
-        E* pElem = &const_cast<E&>(*iter);
+        const E* pElem = &(*iter);
         assertPointerInElements(pElem);
 
         pElem->~E();
+        
+        const PtrDiff diff = pElem - const_cast<const E*>(pStart_);
+        shiftElementsToLeft(pStart_ + diff + 1, pTop_);
 
-        shiftElementsToLeft(pElem + 1, pTop_);
-
-        return *this;
+        return iterator(pStart_, pEnd_, pStart_ + diff);
     }
     
     //template <typename E, typename A>
-    //Vector<E, A>& Vector<E, A>::remove(const_iterator beginIter, const_iterator endIter)
+    //typename Vector<E, A>::iterator Vector<E, A>::remove(const_iterator beginIter, const_iterator endIter)
     //{
     //    assertIsNotEmpty();
 

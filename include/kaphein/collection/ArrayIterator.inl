@@ -176,39 +176,13 @@ namespace collection
     }
 
     template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator ==(const ArrayIterator<E, IsConstIterator>& rhs) const
+    ArrayIterator<E, IsConstIterator>::operator ArrayIterator<E, true>() const
     {
-        return equals(rhs);
-    }
-    
-    template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator !=(const ArrayIterator<E, IsConstIterator>& rhs) const
-    {
-        return !((*this) == rhs);
-    }
-    
-    template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator <(const ArrayIterator<E, IsConstIterator>& rhs) const
-    {
-        return lessThan(rhs);
-    }
-    
-    template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator >=(const ArrayIterator<E, IsConstIterator>& rhs) const 
-    {
-        return !((*this) < rhs);
-    }
-    
-    template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator <=(const ArrayIterator<E, IsConstIterator>& rhs) const
-    {
-        return lessThanOrEqualTo(rhs);
-    }
-
-    template <typename E, bool IsConstIterator>
-    bool ArrayIterator<E, IsConstIterator>::operator >(const ArrayIterator<E, IsConstIterator>& rhs) const
-    {
-        return !((*this) <= rhs);
+        return ArrayIterator<E, true>(
+            static_cast<const E*>(getStart())
+            , static_cast<const E*>(getEnd())
+            , static_cast<const E*>(getCurrent())
+        );
     }
 }
 }

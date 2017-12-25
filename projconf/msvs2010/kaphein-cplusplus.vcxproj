@@ -172,14 +172,9 @@
     <ClInclude Include="..\..\include\kaphein\DivideByZeroException.hpp" />
     <ClInclude Include="..\..\include\kaphein\Exception.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\Delegate.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\Dummy.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\FreeFunctionWrapper.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\Function.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\FunctionBase.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapper.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\FunctionWrapperBase.hpp" />
     <ClInclude Include="..\..\include\kaphein\functional\macro.hpp" />
-    <ClInclude Include="..\..\include\kaphein\functional\MethodWrapper.hpp" />
     <ClInclude Include="..\..\include\kaphein\IndexOutOfRangeException.hpp" />
     <ClInclude Include="..\..\include\kaphein\InvalidArgumentException.hpp" />
     <ClInclude Include="..\..\include\kaphein\math\Abs.hpp" />
@@ -241,7 +236,6 @@
     <ClCompile Include="..\..\src\kaphein\DivideByZeroException.cpp" />
     <ClCompile Include="..\..\src\kaphein\Exception.cpp" />
     <ClCompile Include="..\..\src\kaphein\functional\FunctionBase.cpp" />
-    <ClCompile Include="..\..\src\kaphein\functional\FunctionWrapperBase.cpp" />
     <ClCompile Include="..\..\src\kaphein\IndexOutOfRangeException.cpp" />
     <ClCompile Include="..\..\src\kaphein\InvalidArgumentException.cpp" />
     <ClCompile Include="..\..\src\kaphein\math\Abs.cpp" />

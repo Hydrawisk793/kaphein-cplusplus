@@ -130,18 +130,18 @@ namespace collection
 
         Vector<E, A>& swapElements(iterator lhs, iterator rhs);
 
-        Vector<E, A>& insert(const_iterator pos, const E& e);
+        iterator insert(const_iterator pos, const E& e);
 
-        Vector<E, A>& insert(const_iterator pos, E&& e);
+        iterator insert(const_iterator pos, E&& e);
 
-        //Vector<E, A>& insert(const_iterator pos, SizeType count, const E& e);
+        //iterator insert(const_iterator pos, SizeType count, const E& e);
 
         //template <typename Iter>
-        //Vector<E, A>& insert(const_iterator pos, Iter srcBegin, Iter srcEnd);
+        //iterator insert(const_iterator pos, Iter srcBegin, Iter srcEnd);
 
-        Vector<E, A>& remove(const_iterator pos);
+        iterator remove(const_iterator pos);
 
-        //Vector<E, A>& remove(const_iterator destBegin, const_iterator destEnd);
+        //iterator remove(const_iterator destBegin, const_iterator destEnd);
 
         Vector<E, A>& clear();
 
