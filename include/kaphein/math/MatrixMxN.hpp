@@ -111,31 +111,31 @@ namespace math
         MatrixMxN<E, M, N> & operator +=(const MatrixMxN<E, M, N> & rhs);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator +(const MatrixMxN<E, M, N> & lhs, const MatrixMxN<E, M, N> & rhs);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator +(const MatrixMxN<E, M, N> & lhs, const MatrixMxN<E, M, N> & rhs);
 
         MatrixMxN<E, M, N> & operator -=(const MatrixMxN<E, M, N> & rhs);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator -(const MatrixMxN<E, M, N> & lhs, const MatrixMxN<E, M, N> & rhs);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator -(const MatrixMxN<E, M, N> & lhs, const MatrixMxN<E, M, N> & rhs);
 
         MatrixMxN<E, M, N> & operator *=(const E & scalar);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator *(const MatrixMxN<E, M, N> & matrix, const E & scalar);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator *(const MatrixMxN<E, M, N> & matrix, const E & scalar);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator *(const E & scalar, const MatrixMxN<E, M, N> & matrix);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator *(const E & scalar, const MatrixMxN<E, M, N> & matrix);
 
         template <typename E, SizeType L, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, L, N> operator *(const MatrixMxN<E, L, M> & lhs, const MatrixMxN<E, M, N> & rhs);
+        friend_TEMPLATE const MatrixMxN<E, L, N> operator *(const MatrixMxN<E, L, M> & lhs, const MatrixMxN<E, M, N> & rhs);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator /(const MatrixMxN<E, M, N> & matrix, const E & scalar);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator /(const MatrixMxN<E, M, N> & matrix, const E & scalar);
 
         MatrixMxN<E, M, N> & operator /=(const E & scalar);
 
         template <typename E, SizeType M, SizeType N>
-        friend KAPHEIN_PP_DLL_API_TEMPLATE const MatrixMxN<E, M, N> operator %(const MatrixMxN<E, M, N> & matrix, const E & scalar);
+        friend_TEMPLATE const MatrixMxN<E, M, N> operator %(const MatrixMxN<E, M, N> & matrix, const E & scalar);
 
         MatrixMxN<E, M, N> & operator %=(const E & scalar);
 

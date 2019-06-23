@@ -19,7 +19,7 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API NumericTraits<float>
+    struct NumericTraits<float>
     {
         static const float zero;
 
@@ -29,7 +29,7 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API NumericTraits<double>
+    struct NumericTraits<double>
     {
         static const double zero;
 
@@ -39,7 +39,7 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API NumericTraits<long double>
+    struct NumericTraits<long double>
     {
         static const long double zero;
 

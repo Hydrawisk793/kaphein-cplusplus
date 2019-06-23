@@ -18,19 +18,19 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Cos<float>
+    struct Cos<float>
     {
         float operator ()(const float& radian);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Cos<double>
+    struct Cos<double>
     {
         double operator ()(const double& radian);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Cos<long double>
+    struct Cos<long double>
     {
         long double operator ()(const long double& radian);
     };

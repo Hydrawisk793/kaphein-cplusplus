@@ -50,281 +50,282 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\kaphein\pp\basic.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\pp\basic.hpp">
       <Filter>include\kaphein\pp</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Abs.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\functional\Delegate.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\DelegateBase.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\FreeFunctionWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\FunctionWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\FunctionWrapperBase.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\macro.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\functional\MethodWrapper.hpp">
+      <Filter>include\kaphein\functional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\math\Abs.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Acos.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Acos.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Asin.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Asin.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Atan.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Atan.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Atan2.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Atan2.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Cbrt.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Cbrt.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Ceil.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Ceil.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Cos.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Cos.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Div.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Div.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Equal.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Equal.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Exp.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Exp.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Floor.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Floor.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\IsZero.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\IsZero.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Lerp.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Lerp.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Matrix.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Matrix.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\MatrixMxN.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\MatrixMxN.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\MatrixNxN.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\MatrixNxN.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\NumericTraits.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\NumericTraits.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Pow.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Pow.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Sin.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Sin.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Sqrt.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Sqrt.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Tan.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Tan.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Vector2f.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Vector2f.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Vector2i4.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Vector2i4.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Vector3f.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Vector3f.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\Vector4f.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\Vector4f.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\math\VectorN.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\math\VectorN.hpp">
       <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\memory\DefaultAllocator.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\memory\DefaultAllocator.hpp">
       <Filter>include\kaphein\memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\string\Utf8String.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\string\Utf8String.hpp">
       <Filter>include\kaphein\string</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\SelectType.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\utility\SelectType.hpp">
       <Filter>include\kaphein\utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\UnrolledLoop.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\utility\UnrolledLoop.hpp">
       <Filter>include\kaphein\utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\collection\ArrayIterator.hpp">
-      <Filter>include\kaphein\collection</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\collection\ArrayIteratorBase.hpp">
-      <Filter>include\kaphein\collection</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\collection\ContainerUnderflowException.hpp">
-      <Filter>include\kaphein\collection</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\collection\List.hpp">
-      <Filter>include\kaphein\collection</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\collection\Vector.hpp">
-      <Filter>include\kaphein\collection</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\RemoveConst.hpp">
-      <Filter>include\kaphein\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\DivideByZeroException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\Exception.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\IndexOutOfRangeException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\InvalidArgumentException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\NotImplementedMethodException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\NullPointerException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\RangeException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\UnsupportedMethodException.hpp">
-      <Filter>include\kaphein</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\IsConst.hpp">
-      <Filter>include\kaphein\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\IsVolatile.hpp">
-      <Filter>include\kaphein\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\macro.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\functional\Dummy.hpp">
       <Filter>include\kaphein\functional</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\func.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\collection\ArrayIterator.hpp">
+      <Filter>include\kaphein\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\collection\ArrayIteratorBase.hpp">
+      <Filter>include\kaphein\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\collection\ContainerUnderflowException.hpp">
+      <Filter>include\kaphein\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\collection\List.hpp">
+      <Filter>include\kaphein\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\collection\Vector.hpp">
+      <Filter>include\kaphein\collection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\utility\RemoveConst.hpp">
       <Filter>include\kaphein\utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\Function.hpp">
-      <Filter>include\kaphein\functional</Filter>
+    <ClInclude Include="..\..\..\include\kaphein\DivideByZeroException.hpp">
+      <Filter>include\kaphein</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\FunctionBase.hpp">
-      <Filter>include\kaphein\functional</Filter>
+    <ClInclude Include="..\..\..\include\kaphein\Exception.hpp">
+      <Filter>include\kaphein</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\RemoveVolatile.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\IndexOutOfRangeException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\InvalidArgumentException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\NotImplementedMethodException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\NullPointerException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\RangeException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\UnsupportedMethodException.hpp">
+      <Filter>include\kaphein</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kaphein\utility\IsConst.hpp">
       <Filter>include\kaphein\utility</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\utility\RemoveCv.hpp">
+    <ClInclude Include="..\..\..\include\kaphein\utility\IsVolatile.hpp">
       <Filter>include\kaphein\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\functional\Delegate.hpp">
-      <Filter>include\kaphein\functional</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\include\kaphein\math\Matrix.inl">
+    <None Include="..\..\..\include\kaphein\math\Matrix.inl">
       <Filter>include\kaphein\math</Filter>
     </None>
-    <None Include="..\..\include\kaphein\math\MatrixMxN.inl">
+    <None Include="..\..\..\include\kaphein\math\MatrixMxN.inl">
       <Filter>include\kaphein\math</Filter>
     </None>
-    <None Include="..\..\include\kaphein\math\VectorN.inl">
+    <None Include="..\..\..\include\kaphein\math\VectorN.inl">
       <Filter>include\kaphein\math</Filter>
     </None>
-    <None Include="..\..\include\kaphein\memory\DefaultAllocator.inl">
+    <None Include="..\..\..\include\kaphein\memory\DefaultAllocator.inl">
       <Filter>include\kaphein\memory</Filter>
     </None>
-    <None Include="..\..\include\kaphein\utility\UnrolledLoop.inl">
+    <None Include="..\..\..\include\kaphein\utility\UnrolledLoop.inl">
       <Filter>include\kaphein\utility</Filter>
     </None>
-    <None Include="..\..\include\kaphein\collection\ArrayIterator.inl">
+    <None Include="..\..\..\include\kaphein\collection\ArrayIterator.inl">
       <Filter>include\kaphein\collection</Filter>
     </None>
-    <None Include="..\..\include\kaphein\collection\Vector.inl">
+    <None Include="..\..\..\include\kaphein\collection\Vector.inl">
       <Filter>include\kaphein\collection</Filter>
     </None>
-    <None Include="..\..\LICENSE" />
-    <None Include="..\..\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\kaphein\collection\ArrayIteratorBase.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\collection\ArrayIteratorBase.cpp">
       <Filter>src\kaphein\collection</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Abs.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\functional\FunctionWrapperBase.cpp">
+      <Filter>src\kaphein\functional</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\kaphein\math\Abs.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Acos.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Acos.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Asin.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Asin.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Atan.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Atan.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Atan2.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Atan2.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Cbrt.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Cbrt.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Ceil.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Ceil.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Cos.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Cos.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Div.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Div.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Exp.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Exp.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Floor.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Floor.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\NumericTraits.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\NumericTraits.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Pow.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Pow.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Sin.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Sin.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Sqrt.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Sqrt.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Tan.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Tan.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\math\Vector2i4.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\math\Vector2i4.cpp">
       <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\string\Utf8String.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\string\Utf8String.cpp">
       <Filter>src\kaphein\string</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\UnsupportedMethodException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\UnsupportedMethodException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\DivideByZeroException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\DivideByZeroException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\Exception.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\Exception.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\IndexOutOfRangeException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\IndexOutOfRangeException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\InvalidArgumentException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\InvalidArgumentException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\NotImplementedMethodException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\NotImplementedMethodException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\NullPointerException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\NullPointerException.cpp">
       <Filter>src\kaphein</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\RangeException.cpp">
+    <ClCompile Include="..\..\..\src\kaphein\RangeException.cpp">
       <Filter>src\kaphein</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\functional\FunctionBase.cpp">
-      <Filter>src\kaphein\functional</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

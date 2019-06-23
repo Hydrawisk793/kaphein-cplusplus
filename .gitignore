@@ -1,43 +1,71 @@
 # Prerequisites
-*.d
-
-# Backup files
-backup/
+#*.d
 
 # MSVS files
 #*.vcxproj
 #*.filters
-#*.user
+*.user
 *.sdf
 
-# Compiled Object files
+# Misc directories
+.vs/
+backup/
+ext/
+ref/
+test/
+concept/
+
+# Binary files
+bin/
+
+# Object files
 obj/
-*.slo
-*.lo
 *.o
+*.ko
 *.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# Libraries
 lib/
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
 *.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
 # Executables
 *.exe
 *.out
 *.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf

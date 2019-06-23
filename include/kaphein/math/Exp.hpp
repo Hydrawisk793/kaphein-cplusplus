@@ -17,19 +17,19 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Exp<float>
+    struct Exp<float>
     {
         float operator ()(const float& v);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Exp<double>
+    struct Exp<double>
     {
         double operator ()(const double& v);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Exp<long double>
+    struct Exp<long double>
     {
         long double operator ()(const long double& v);
     };

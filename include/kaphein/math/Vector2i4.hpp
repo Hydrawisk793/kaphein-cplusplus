@@ -9,7 +9,7 @@ namespace kaphein
 {
 namespace math
 {
-    class KAPHEIN_PP_DLL_API Vector2i4
+    class Vector2i4
         : public VectorN<std::int32_t, 2>
     {
     public:

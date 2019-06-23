@@ -18,31 +18,31 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Sqrt<float>
+    struct Sqrt<float>
     {
         float operator ()(const float& e);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Sqrt<double>
+    struct Sqrt<double>
     {
         double operator ()(const double& e);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Sqrt<long double>
+    struct Sqrt<long double>
     {
         long double operator ()(const long double& e);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Sqrt<Int32>
+    struct Sqrt<Int32>
     {
         Int32 operator ()(const Int32& e);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Sqrt<Int64>
+    struct Sqrt<Int64>
     {
         Int64 operator ()(const Int64& e);
     };

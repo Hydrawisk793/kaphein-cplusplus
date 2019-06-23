@@ -1,32 +1,7 @@
-/*
- *  Copyright (c) Hydrawisk793
- *  All rights reserved.
- *
- *  This code is licensed under the MIT License.
- *
- *  Permission is hereby granted, free of charge, to any person obtaining a copy
- *  of this software and associated documentation files(the "Software"), to deal
- *  in the Software without restriction, including without limitation the rights
- *  to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
- *  copies of the Software, and to permit persons to whom the Software is
- *  furnished to do so, subject to the following conditions :
- *
- *  The above copyright notice and this permission notice shall be included in
- *  all copies or substantial portions of the Software.
- *
- *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
- *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- *  THE SOFTWARE.
- */
-
 #ifndef KAPHEIN_FUNCTIONAL_MACRO_HPP
 #define KAPHEIN_FUNCTIONAL_MACRO_HPP
 
-#include "kaphein/pp/basic.hpp"
+#include "../pp/basic.hpp"
 
 #define KAPHEIN_x_MAKE_LIST_0()
 #define KAPHEIN_x_MAKE_LIST_1(_1) \
@@ -52,30 +27,6 @@
 #define KAPHEIN_x_MAKE_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
     KAPHEIN_x_MAKE_LIST_7(_1, _2, _3, _4, _5, _6, _7) \
     , _8
-#define KAPHEIN_x_MAKE_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
-    KAPHEIN_x_MAKE_LIST_8(_1, _2, _3, _4, _5, _6, _7, _8) \
-    , _9
-#define KAPHEIN_x_MAKE_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
-    KAPHEIN_x_MAKE_LIST_9(_1, _2, _3, _4, _5, _6, _7, _8, _9) \
-    , _10
-#define KAPHEIN_x_MAKE_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
-    KAPHEIN_x_MAKE_LIST_10(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10) \
-    , _11
-#define KAPHEIN_x_MAKE_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
-    KAPHEIN_x_MAKE_LIST_11(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11) \
-    , _12
-#define KAPHEIN_x_MAKE_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
-    KAPHEIN_x_MAKE_LIST_12(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12) \
-    , _13
-#define KAPHEIN_x_MAKE_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
-    KAPHEIN_x_MAKE_LIST_13(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13) \
-    , _14
-#define KAPHEIN_x_MAKE_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
-    KAPHEIN_x_MAKE_LIST_14(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14) \
-    , _15
-#define KAPHEIN_x_MAKE_LIST_16(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16) \
-    KAPHEIN_x_MAKE_LIST_15(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15) \
-    , _16
 #define KAPHEIN_x_MAKE_LIST___(count, ...) \
     KAPHEIN_x_EXPAND( \
         KAPHEIN_x_MAKE_LIST_ ## count (__VA_ARGS__) \

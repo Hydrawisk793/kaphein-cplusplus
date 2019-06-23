@@ -18,19 +18,19 @@ namespace math
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Pow<float>
+    struct Pow<float>
     {
         float operator ()(const float& x, const float& y);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Pow<double>
+    struct Pow<double>
     {
         double operator ()(const double& x, const double& y);
     };
 
     template <>
-    struct KAPHEIN_PP_DLL_API Pow<long double>
+    struct Pow<long double>
     {
         long double operator ()(const long double& x, const long double& y);
     };

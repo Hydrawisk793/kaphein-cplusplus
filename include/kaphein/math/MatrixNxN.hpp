@@ -15,7 +15,7 @@
 namespace kaphein {
 namespace math {
     template <typename E, std::size_t N>
-    class KAPHEIN_PP_DLL_API_TEMPLATE MatrixNxN {
+    class_TEMPLATE MatrixNxN {
     public:
         typedef E ElementType;
 

@@ -1,15 +1,17 @@
 #ifndef KAPHEIN_NOTIMPLEMENTEDMETHODEXCEPTION_HPP
 #define KAPHEIN_NOTIMPLEMENTEDMETHODEXCEPTION_HPP
 
-#include "kaphein/pp/basic.hpp"
-#include "kaphein/Exception.hpp"
+#include "pp/basic.hpp"
+#include "Exception.hpp"
 
 namespace kaphein
 {
     /**
      *  @since 2014-03-23
      */
-    class KAPHEIN_PP_DLL_API NotImplementedMethodException
+    class
+    KAPHEIN_ATTRIBUTE_DLL_API
+    NotImplementedMethodException
         : public Exception
     {
     public:

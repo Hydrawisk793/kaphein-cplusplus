@@ -12,7 +12,7 @@ namespace kaphein
 {
 namespace math
 {
-    class KAPHEIN_PP_DLL_API Vector3f final
+    class Vector3f final
         : public VectorN<float, 3>
     {
     public:
@@ -75,12 +75,12 @@ namespace math
         
         Vector3f pointwiseAbsolute() const;
 
-        friend KAPHEIN_PP_DLL_API Vector3f operator +
+        friend Vector3f operator +
         (
             const Vector3f & rhs
         );
         
-        friend KAPHEIN_PP_DLL_API Vector3f operator -
+        friend Vector3f operator -
         (
             const Vector3f & rhs
         );
@@ -128,7 +128,7 @@ namespace math
             const Vector3f & rhs
         );
 
-        friend KAPHEIN_PP_DLL_API Vector3f operator +
+        friend Vector3f operator +
         (
             const Vector3f & lhs
             , const Vector3f & rhs
@@ -139,7 +139,7 @@ namespace math
             const Vector3f & rhs
         );
 
-        friend KAPHEIN_PP_DLL_API Vector3f operator -
+        friend Vector3f operator -
         (
             const Vector3f & lhs
             , const Vector3f & rhs
@@ -150,13 +150,13 @@ namespace math
             const ElementType & scalar
         );
 
-        friend KAPHEIN_PP_DLL_API Vector3f operator *
+        friend Vector3f operator *
         (
             const Vector3f & vector
             , const ElementType & scalar
         );
         
-        friend KAPHEIN_PP_DLL_API Vector3f operator *
+        friend Vector3f operator *
         (
             const ElementType & scalar
             , const Vector3f & vector
@@ -167,7 +167,7 @@ namespace math
             const ElementType & scalar
         );
 
-        friend KAPHEIN_PP_DLL_API Vector3f operator /
+        friend Vector3f operator /
         (
             const Vector3f & vector
             , const ElementType & scalar
