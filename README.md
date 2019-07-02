@@ -1,6 +1,6 @@
 # kaphein-cplusplus
 
-kaphein-cplusplus is a library that helps buliding various applications written in C++.
+kaphein-cplusplus is a library that helps building various applications written in C++.
 
 ### Prerequisites
 
